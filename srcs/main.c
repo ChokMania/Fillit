@@ -20,8 +20,6 @@ void	ft_free(t_list *elem, char *finish[1])
 	elem->data = NULL;
 	elem->next = NULL;
 	free(elem);
-	if (*finish)
-		free(*finish);
 }
 
 int		main(int ac, char **av)
