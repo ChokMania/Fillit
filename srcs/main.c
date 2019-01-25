@@ -6,7 +6,7 @@
 /*   By: judumay <judumay@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 11:24:29 by judumay           #+#    #+#             */
-/*   Updated: 2018/12/06 15:35:48 by judumay          ###   ########.fr       */
+/*   Updated: 2019/01/17 09:55:37 by judumay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	ft_free(t_list *elem, char *finish[1])
 	elem->data = NULL;
 	elem->next = NULL;
 	free(elem);
-	if (*finish)
-		free(*finish);
 }
 
 int		main(int ac, char **av)
